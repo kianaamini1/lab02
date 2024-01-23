@@ -17,6 +17,97 @@ html {
   line-height: 1.4;
 }
 
+.header {
+  columns: 7;
+  text-align: center;
+}
+
+.metrolicHeader {
+  display: flex;
+}
+
+.home {
+  background-color: green;
+  width: 80px;
+  height: 60px;
+}
+.pages {
+  background-color: yellow;
+  width: 80px;
+  height: 60px;
+}
+.blog {
+  background-color: red;
+  width: 80px;
+  height: 60px;
+}
+.portfolio {
+  background-color: teal;
+  width: 80px;
+  height: 60px;
+}
+.home02 {
+  background-color: blue;
+  width: 80px;
+  height: 60px;
+}
+
+.intro-head {
+  text-align: center;
+  margin-top: 350px;
+}
+
+.wedo {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.box1 {
+  text-align:center;
+  margin-left: 600px;
+  border: 3px solid orange;
+  width: 40px;
+}
+
+
+.box2 {
+  text-align:center;
+  border: 3px solid green;
+  width: 40px;
+  margin-left: 300px;
+}
+.box3 {
+  text-align:center;
+  border: 3px solid red;
+  width: 40px;
+  
+}
+.box4 {
+  text-align:center;
+  border: 3px solid blue;
+  width: 40px;
+}
+
+.services {
+  columns: 4;
+  align-items: center;
+}
+.latestWork {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.latestProject {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.Thingsofabove {
+  text-align: center;
+  margin-top: 50px;
+}
+
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
