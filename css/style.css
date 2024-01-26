@@ -11,101 +11,178 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+div,
+main,
+section,
+footer,
+header{ 
+  outline: 1px solid #ccc;
+  min-height: 1rem;
+  padding: 1rem;  
 }
 
-.header {
-  columns: 7;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+
+.menu {
+  display: grid;
+  row-gap: 1rem;
+  flex-direction: row;
+  align-content: center;
+ 
+}
+
+.col {
+  position: relative;
   text-align: center;
 }
 
-.metrolicHeader {
+.row {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.menu-list {
+  list-style: none;
+  flex-direction: row;
   display: flex;
+  margin-left: 25rem;
 }
 
-.home {
+.menu-item  {
+  display: flex;
+  align-content: center;
+  text-align: center;
+}
+
+.menu-home {
+  color:#fff;
+  text-decoration: none;
   background-color: green;
-  width: 80px;
-  height: 60px;
+  padding: 2rem;
+  margin-left: 5rem;
+  width: 3rem;
 }
-.pages {
-  background-color: yellow;
-  width: 80px;
-  height: 60px;
+.menu-pages {
+  color:#fff;
+  text-decoration: none;
+  background-color: orange;
+  padding: 2rem;
+  width: 3rem;
 }
-.blog {
-  background-color: red;
-  width: 80px;
-  height: 60px;
+.menu-blog {
+  color:#fff;
+  text-decoration: none;
+  background-color: lightcoral;
+  padding: 2rem;
+  width: 3rem;
 }
-.portfolio {
-  background-color: teal;
-  width: 80px;
-  height: 60px;
+.menu-portfolio {
+  color:#fff;
+  text-decoration: none;
+  background-color: skyblue;
+  padding: 2rem;
+  width: 3rem;
 }
-.home02 {
+.menu-home-2 {
+  color:#fff;
+  text-decoration: none;
   background-color: blue;
-  width: 80px;
-  height: 60px;
+  padding: 2rem;
+  width: 3rem;
 }
 
-.intro-head {
-  text-align: center;
-  margin-top: 350px;
+.word {
+  color: blue;
 }
 
-.wedo {
-  margin-top: 70px;
-  text-align: center;
+.img-one {
+  border: 0.25rem solid orange;
+  width: 2rem;
+  margin-left: 6rem;
+}
+.img-two {
+  border: 0.25rem solid green;
+  width: 2rem;
+  margin-left: 6rem;
+}
+.img-three {
+  border: 0.25rem solid lightcoral;
+  width: 2rem;
+  margin-left: 6rem;
+}
+.img-four {
+  border: 0.25rem solid skyblue;
+  width: 2rem;
+  margin-left: 6rem;
 }
 
-.box1 {
-  text-align:center;
-  margin-left: 600px;
-  border: 3px solid orange;
-  width: 40px;
+
+.row {
+  max-width: 70rem;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  margin: 0 auto;
+}
+.m-col-2 {
+  grid-template-columns: 2fr 2fr;
+}
+.m-col-4 {
+  grid-template-columns: 2fr 2fr;
+}
+
+.m-col-5 {
+  grid-template-columns: 5fr 5fr ;
+}
+
+.footer {
+  background-color: navy;
+  color: white;
+}
+
+.l-col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (min-width: 64em) {
+  .l-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .m-row-span {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .l-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .l-col-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .l-col-6 {
+    grid-template-columns: 6, 1fr;
+  }
+
+  .grid {
+    display:grid;
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+
+  }
 }
 
 
-.box2 {
-  text-align:center;
-  border: 3px solid green;
-  width: 40px;
-  margin-left: 300px;
-}
-.box3 {
-  text-align:center;
-  border: 3px solid red;
-  width: 40px;
-  
-}
-.box4 {
-  text-align:center;
-  border: 3px solid blue;
-  width: 40px;
-}
 
-.services {
-  columns: 4;
-  align-items: center;
-}
-.latestWork {
-  text-align: center;
-  margin-top: 50px;
-}
 
-.latestProject {
-  text-align: center;
-  margin-top: 50px;
-}
 
-.Thingsofabove {
-  text-align: center;
-  margin-top: 50px;
-}
 
 
 /*
