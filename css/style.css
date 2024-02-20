@@ -10,13 +10,17 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-/* 
+
+@media screen and (min-width: 64em) {
+   /* 
 div,
 main,
 section,
 header{ 
   padding: 0.75rem;  
 } */
+
+
 
 h1,
 h2,
@@ -26,6 +30,7 @@ h5,
 h6 {
   font-weight: 300;
 }
+
 
 .header {
   
@@ -129,6 +134,7 @@ h6 {
   width: 2rem;
 }
 
+
 .row {
   max-width: 70rem;
   column-gap: 1.5rem;
@@ -160,6 +166,8 @@ margin-bottom: 3rem;
   top: 50%; 
   transform: translateY(-50%);
 }
+
+
 .container{
   display: flex;
   flex-wrap: wrap;
@@ -256,13 +264,6 @@ margin-bottom: 3rem;
 
 
 
-
-
-
-
-
-
-
 .m-col-2 {
   grid-template-columns: 2fr 2fr;
 }
@@ -285,12 +286,6 @@ margin-bottom: 3rem;
 
 
 
-
-
-
-
-
-@media screen and (min-width: 64em) {
   .l-col-4 {
     grid-template-columns: repeat(4, 1fr);
   }
